@@ -46,7 +46,8 @@ const AddressInput: React.FC = () => {
                 <Input 
                     placeholder="Ingrese una dirección" 
                     value={address} 
-                    onChange={(e) => setAddress(e.target.value)} 
+                    onChange={(e) => setAddress(e.target.value)}
+                    onClick={handleSearch}
                 />
             </div>
             <Button 
