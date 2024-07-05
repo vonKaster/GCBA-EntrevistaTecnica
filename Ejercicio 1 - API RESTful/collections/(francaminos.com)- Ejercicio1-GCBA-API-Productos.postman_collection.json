@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "5a4d1517-4c1f-4653-af82-abf8f4c4d24b",
+		"name": "(francaminos.com): Ejercicio1-GCBA-API-Productos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16106878"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-gcba.francaminos.com/api/productos",
+					"protocol": "https",
+					"host": [
+						"api-gcba",
+						"francaminos",
+						"com"
+					],
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener producto por ID [1]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-gcba.francaminos.com/api/productos/1",
+					"protocol": "https",
+					"host": [
+						"api-gcba",
+						"francaminos",
+						"com"
+					],
+					"path": [
+						"api",
+						"productos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dar de alta un producto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Martillo\",\n    \"descripcion\": \"Martillo para obra\",\n    \"precio\": \"20\",\n    \"cantidad\": \"5\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-gcba.francaminos.com/api/productos",
+					"protocol": "https",
+					"host": [
+						"api-gcba",
+						"francaminos",
+						"com"
+					],
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar por completo un producto [1]",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Lapicera\",\n    \"descripcion\": \"Lapicera de tinta negra\",\n    \"precio\": 5,\n    \"cantidad\": 200\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-gcba.francaminos.com/api/productos/1",
+					"protocol": "https",
+					"host": [
+						"api-gcba",
+						"francaminos",
+						"com"
+					],
+					"path": [
+						"api",
+						"productos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar parcialmente un producto [1]",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"descripcion\": \"Lapicera de tinta roja\",\n    \"precio\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-gcba.francaminos.com/api/productos/1",
+					"protocol": "https",
+					"host": [
+						"api-gcba",
+						"francaminos",
+						"com"
+					],
+					"path": [
+						"api",
+						"productos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar un producto [1]",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api-gcba.francaminos.com/api/productos/1",
+					"protocol": "https",
+					"host": [
+						"api-gcba",
+						"francaminos",
+						"com"
+					],
+					"path": [
+						"api",
+						"productos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

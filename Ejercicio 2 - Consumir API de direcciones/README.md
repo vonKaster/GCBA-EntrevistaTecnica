@@ -1,46 +1,25 @@
-# Getting Started with Create React App
+# Web consumidora de API (Direcciones)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### En esta carpeta se encuentra el código fuente de la página que consume la API del ejercicio 2,  de igual manera como está aclarado en el ejercicio 1, lo aclaro nuevamente en esta sección. Existe una versión de esta página alojada en un servidor (https://direcciones-gcba.francaminos.com/) para que pueda ser consultada sin la necesidad de correr el proyecto localmente.
 
-## Available Scripts
+### Tecnologías utilizadas
+- React.js
+- React Router
+- Ant Design
+- Typescript
+- Axios
 
-In the project directory, you can run:
+### Levantar localmente el proyecto
 
-### `npm start`
+En primer lugar hay que clonar el proyecto en una ruta de preferencia, ya sea usando HTTPS o SSH
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**`HTTPS`** `git clone https://github.com/vonKaster/GCBA-EntrevistaTecnica.git`
+**`SSH`** `git clone git@github.com:vonKaster/GCBA-EntrevistaTecnica.git`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Luego de haber clonado hay que ingresar dentro de la siguiente ruta `GCBA-EntrevistaTecnica/Ejercicio 2 - Consumir API de direcciones` , y dentro de la carpeta abrir una `shell` para instalar las depencias necesarias
 
-### `npm test`
+`npm install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Una vez hecho todo esto, ya solamente resta correr el proyeto
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+`npm start`
